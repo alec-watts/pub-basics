@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+    body
+        h1#pageTitle page 1
+        p.big-para. 
+            jawnd
+            is here 
+        .display-box
+        input(type="password" name="inpPwd" data-js=`${ 5 > 2 ? "OK" : "NOT OK!" }`)
+
+
+        - const myClasses = ["class1", "class2", "class3"];
+        div.my-div(class=myClasses)
+
+        - // styles use {} because it is a dictionary
+        - const myStyles = {"color": "red"};
+        div(style=myStyles)
+
+
+        - const myAttributes = {"src": "myPhoto.png", "alt": "my photo"};
+        img&attributes(myAttributes)
+
+        input(type="text", disabled=false)

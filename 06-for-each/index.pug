@@ -1,0 +1,11 @@
+doctype html
+html 
+    head 
+    body 
+        h1 For/Each Loop
+        - const names = ["dog", "cat", "bird", "fish", "snake"];
+        - const grades = { "Web Dev": 86, "Math": 90, "Science": 95, "History": 80, "English": 75 };
+        each n, i in []
+            p= i + " - " + n
+        else
+            strong "No grades to show"
